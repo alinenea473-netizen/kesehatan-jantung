@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kesehatan Jantung</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f7fa;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(to right, #d62828, #ef476f);
+      color:white;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      font-size:28px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:bold;
+    }
+
+    .hero{
+      height:90vh;
+      background:url('https://ners.unair.ac.id/site/index.php/news-fkp-unair/30-lihat/715-waspada-penyumbatan-jantung') center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+      position:relative;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.5);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:1;
+      max-width:700px;
+    }
+
+    .hero h2{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#ff4d6d;
+      color:white;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:30px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:#d90429;
+    }
+
+    section{
+      padding:70px 10%;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:15px;
+    }
+
+    .about-text h3{
+      font-size:35px;
+      margin-bottom:20px;
+      color:#d62828;
+    }
+
+    .tips{
+      background:white;
+      text-align:center;
+    }
+
+    .tips h3{
+      font-size:36px;
+      margin-bottom:40px;
+      color:#d62828;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#fff;
+      padding:30px 20px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h4{
+      color:#ef233c;
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    footer{
+      background:#d62828;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+      .hero h2{
+        font-size:36px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>HeartCare</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tentang</a>
+      <a href="#">Tips</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Jaga Kesehatan Jantung Anda</h2>
+      <p>
+        Hidup sehat dimulai dari jantung yang sehat. 
+        Temukan tips menjaga kesehatan jantung setiap hari.
+      </p>
+
+      <a href="#" class="btn">Pelajari Sekarang</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=80" alt="Kesehatan Jantung">
+
+    <div class="about-text">
+      <h3>Tentang Kesehatan Jantung</h3>
+
+      <p>
+        Jantung adalah organ vital yang bekerja tanpa henti untuk memompa darah ke seluruh tubuh. 
+        Menjaga kesehatan jantung dapat dilakukan dengan pola makan sehat, olahraga rutin, 
+        tidur cukup, dan mengurangi stres.
+      </p>
+    </div>
+  </section>
+
+  <section class="tips">
+    <h3>Tips Menjaga Jantung</h3>
+
+    <div class="cards">
+
+      <div class="card">
+        <h4>Olahraga</h4>
+        <p>
+          Lakukan aktivitas fisik minimal 30 menit setiap hari untuk menjaga kesehatan jantung.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Makan Sehat</h4>
+        <p>
+          Konsumsi buah, sayur, dan makanan rendah lemak untuk menjaga tekanan darah.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Istirahat</h4>
+        <p>
+          Tidur yang cukup membantu tubuh dan jantung bekerja lebih optimal.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 HeartCare | Landing Page Kesehatan Jantung</p>
+  </footer>
+
+</body>
+</html>
